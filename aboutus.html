@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+        }
+
+    /* Clearfix (clear floats) */
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .btn {
+        background-color: #2196F3;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        }
+
+        .dropdown {
+         position: absolute;
+         display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: center;
+        background-color: #f1f1f1;
+        min-width: 160px;
+         z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .btn:hover, .dropdown:hover .btn {
+          background-color: #0b7dda;
+        }
+    </style>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Content</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="docs/Domain%20Names%20&%20ICANN.html">Domain Names and ICANN</a>
+                    <a class="dropdown-item" href="IP.html">IP Addresses, Packets and Routing</a>
+                    <a class="dropdown-item" href="DNS.html">DNS</a>
+                    <a class="dropdown-item" href="http.html">HTTP and HTTPS Protocols</a>
+                    <a class="dropdown-item" href="w3c.html">W3C and HTML and CSS</a>
+                </div>
+            </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<!-- Body -->
+    <h1 class="page-header bg- text-center text-dark jumbotron">Meet The Team</h1>
+    <div class="container">
+        <p class="lead text-center">We paired up to understand and share our knowledge on  how the internet works by
+            providing brief explanations of terms such as Domain Names, IP Addresses, DNS, HTTP, etc. Sima is a working
+            professional attending graduate school part time to study Business & Information Systems.
+            Yash is a full time graduate student studying Computer Science. Shahrukh is a full time graduate student
+            finishing his last semester studying Information Technology.</p>
+    </div>
+    <br>
+    <div class="row">
+        <div class="column">
+            <img src="../images/sima.jpg" alt="Sima" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../images/yash.jpg" alt="Yash" style="width:100%">
+        </div>
+        <div class="column">
+            <img src="../images/shahrukh.jpg" alt="Shahrukh" style="width:100%">
+        </div>
+    </div>
+    <br>
+    
+    <div class="dropdown show">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Connect with US
+      </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="https://www.linkedin.com/in/sima-kalam-0706/">Sima's LinkedIn</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/yash-barad/">Yash's LinkedIn</a>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/shahrukh-khan-316505120/">Shahrukh's LinkedIn</a>
+          </div>
+    </div>
+
+    <!--<button class="btn">Connect With Us</button>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="collapse navbar-collapse">
+        <button class="btn" style="border-center:1px solid #0d8bf2">
+            <i class="fa fa-caret-down"></i> 
+            <div class="dropdown-menu">
+                 <a class="dropdown-item" href="https://www.linkedin.com/in/sima-kalam-0706/">Sima's LinkedIn</a>
+                 <a class="dropdown-item" href="https://www.linkedin.com/in/yash-barad/">Yash's LinkedIn</a>
+                 <a class="dropdown-item" href="https://www.linkedin.com/in/shahrukh-khan-316505120/">Shahrukh's LinkedIn</a>
+            </div>
+        </button>
+    </div> -->
+</div>
+<br><br><br><br><br><br>
+</body>
+</html>
+
+
+
+
