@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HyperTextTransferProtocol: HTTP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Content</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="docs/Domain%20Names%20&%20ICANN.html">Domain Names and ICANN</a>
+                        <a class="dropdown-item" href="#">IP Addresses, Packets and Routing</a>
+                        <a class="dropdown-item" href="#">DNS</a>
+                        <a class="dropdown-item" href="#">HTTP and HTTPS Protocols</a>
+                        <a class="dropdown-item" href="#">W3C and HTML and CSS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="docs/aboutus.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">References</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>HTTP and HTTPS Protocol</h1>
+</div>
+<br>
+
+<div class="col-lg-12 text-justified">
+
+    <p><h4>What is HTTP?</h4></p>
+    <div class="d-flex justify-content-center">
+        <img src="/images/http.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+    </div>
+    <p>The Hypertext Transfer Protocol (HTTP) is the foundation of the World Wide Web, and is used to load web pages
+        using hypertext links. HTTP is an application layer protocol designed to transfer information between networked
+        devices and runs on top of other layers of the network protocol stack. A typical flow over HTTP involves a
+        client machine making a request to a server, which then sends a response message.</p>
+
+    <p><h4>What is HTTPS?</h4></p>
+    <div class="d-flex justify-content-center">
+        <img src="/images/https.jpg" class="img-fluid" alt="Responsive image" width="1000" height="250">
+    </div>
+    <p>Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol used to
+        send data between a web browser and a website. HTTPS is encrypted in order to increase security of data
+        transfer. This is particularly important when users transmit sensitive data, such as by logging into a bank
+        account, email service, or health insurance provider.
+        Any website, especially those that require login credentials, should use HTTPS. In modern web browsers such as
+        Chrome, websites that do not use HTTPS are marked differently than those that are. Look for a green padlock in
+        the URL bar to signify the webpage is secure. Web browsers take HTTPS seriously; Google Chrome and other
+        browsers flag all non-HTTPS websites as not secure.</p>
+
+    <p><h4>HTTP vs HTTPS?</h4></p>
+    <div class="d-flex justify-content-center">
+        <img src="/images/http-vs-https.png" class="img-fluid" alt="Responsive image" width="1000" height="250">
+    </div>
+    <p>HTTPS is not a separate protocol from HTTP. It is simply using TLS/SSL encryption over the HTTP protocol. HTTPS
+        occurs based upon the transmission of TLS/SSL certificates, which verify that a particular provider is who they
+        say they are.</p>
+    <p>When a user connects to a webpage, the webpage will send over its SSL certificate which contains the public key
+        necessary to start the secure session. The two computers, the client and the server, then go through a process
+        called an SSL/TLS handshake, which is a series of back-and-forth communications used to establish a secure
+        connection.</p>
+</div>
+
+<br>
+<div class="jumbotron text-center" style="margin-bottom:0">
+    <p></p>
+</div>
+</body>
+</html>
