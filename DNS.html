@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns:color="http://www.w3.org/1999/xhtml">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">Content</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="docs/Domain%20Names%20&%20ICANN.html">Domain Names and ICANN</a>
+                    <a class="dropdown-item" href="#">IP Addresses, Packets and Routing</a>
+                    <a class="dropdown-item" href="#">DNS</a>
+                    <a class="dropdown-item" href="#">HTTP and HTTPS Protocols</a>
+                    <a class="dropdown-item" href="#">W3C and HTML and CSS</a>
+            </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="docs/aboutus.html">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">References</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<h1  class="page-header text-center text-dark jumbotron" >DNS</h1>
+
+
+    <div class="container">
+        <div class="container">
+            <h2 id="the-need-for-an-indestructible-network" class="text-center text-capitalize">DNS Function</h2>
+            <hr>
+            <figure class="text-center">
+                <img src="images/DNS.png">
+            </figure>
+        <p class="container-fluid text-justify">The Domain Name System (DNS) is the phonebook of the Internet. Humans
+            access information online through domain names, like nytimes.com or espn.com. Web browsers interact through 
+            Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet 
+            resources. Each device connected to the Internet has a unique IP address which other machines use to find the 
+            device. DNS servers eliminate the need for humans to memorize IP addresses such as 192.168.1.1(IPv4) or more complex 
+            newer alphanumeric IP addresses such as 2400:cb00:2048:1::c629:d7a2 (IPv6).  </p>
+    </div>
+    
+        <div class="container">
+            <h2 id="the-need-for-an-indestructible-network" class="text-center text-capitalize">Four DNS servers involved in loading a webpage:</h2>
+            <hr>
+            <figure class="text-center">
+                <img src="images/Nameserver.png">
+            </figure>
+            <p class="container-fluid text-justify">•	DNS Recursor- The recursor can be thought of as a librarian who is asked to go find a particular book somewhere in a library. 
+                              o	The DNS recursor is a server designed to receive queries from client machines through applications such as web browsers. 
+                              o	Typically the recursor is then responsible for making additional requests in order to satisfy the client’s DNS query.
+                •	Root nameserver - The root server is the first step in translating (resolving) human readable host names into IP addresses. 
+                              o	It can be thought of like an index in a library that points to different racks-it serves as a reference to other more specific locations.
+                •	TLD namserver - The top level domain server (TLD) can be thought of as a specific rack of books in a library. 
+                              o	This nameserver is the next step in the search for a specific IP address, and it hosts the last portion of a hostname 
+                •	Authoritative DNS Server - This final nameserver can be thought of as a dictionary on a rack of books, in which a specific name can be translated into its definition. 
+                              o	The authoritative nameserver is the last stop in the nameserver query. If the authoritative name server has access to the requested record, it will return the IP address for the requested hostname back to the DNS Recursor. </p>
+
+        </div>
+ 
+</div>
+    
+</body>
+
+</html>
